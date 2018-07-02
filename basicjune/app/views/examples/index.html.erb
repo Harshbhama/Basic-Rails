@@ -1,0 +1,33 @@
+<h1>Examples#abc</h1>
+<p>Find me in app/views/examples/abc.html.erb</p>
+
+<% if @abc %>
+<%=@abc.name %>
+<p> You are signed in..!!! </p>
+
+<%= link_to 'Sign-out', '/examples/sign_out' %>
+<br>
+<% end %>
+
+<% @example.reverse.each do |p| %>
+<br>
+	<%= p.name %>--
+	<%= p.designation %>
+	
+	<li><%= link_to 'Edit', example_new_path(p.id) %></li>
+	<li><%=link_to "Delete",destroy_post_path(p), method: :delete%>
+	<%end%>
+	<br>
+<!-- <p>Link to New form page is </p> -->
+<br>
+
+<%= link_to 'Sign-up', '/examples/new' %>
+<br>
+<br>
+<%= link_to 'Sign-in', '/examples/sign_in' %>
+
+
+
+
+	
+	

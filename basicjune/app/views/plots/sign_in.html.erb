@@ -1,0 +1,12 @@
+
+	<h1>User sign in</h1>
+
+<%= form_tag examples_create_session_path, method: :post do %>
+
+	<%=label_tag :Comment %>
+	<%=text_field_tag :Comment %>
+
+	<br>
+
+	<%=submit_tag "Sign-in" %>
+	<% end %>

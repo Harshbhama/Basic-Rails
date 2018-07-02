@@ -1,0 +1,16 @@
+<h1>User sign in</h1>
+
+<%= form_tag examples_create_session_path, method: :post do %>
+
+	<%=label_tag :designation %>
+	<%=text_field_tag :designation %>
+
+	<br>
+
+	<%=label_tag :password %>
+	<%=password_field_tag :password %>
+
+	<br>
+
+	<%=submit_tag "Sign-in" %>
+	<% end %>

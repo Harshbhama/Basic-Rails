@@ -1,0 +1,25 @@
+<h1>Edit form</h1>
+
+<%= form_for @example do |f| %>
+
+	<%= f.label :Name %>
+	<%= f.text_field :name%>
+
+	<br>
+
+	<%= f.label :Desgination %>
+	<%= f.text_field :designation%>
+
+	<br>
+
+	<%= f.label :password %>
+	<%= f.password_field :password %>
+
+	<br>
+
+
+	<%= f.submit %>
+
+	<% end%>
+
+
